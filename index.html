@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my website</title>
   <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/mediaquery.css">
 </head>
 <body>
   <nav id="desktop-nav">
@@ -18,23 +19,44 @@
       </ul>
     </div>
   </nav>
-    <nav id="humberger-nav">
-      <div class="logo">noble Paul</div>
-      <div class="humbeger-menu">
-        <div class="humberger-icon" onclick="toogleMenu()">
-        <span></span>  
-        <span></span>  
-        <span></span>  
-        </div>
-        <div class="menu-links">
-          <li><a href="#about"  onclick="toogleMenu()">about</a></li>
-          <li><a href="#experience" onclick="toogleMenu()">experience</a></li>
-          <li><a href="#projects" onclick="toogleMenu()">projects</a></li>
-          <li><a href="#contact" onclick="toogleMenu()">contact</a></li>
-        </div>
+  <nav id="humberger-nav">
+    <div class="logo">noble Paul</div>
+    <div class="humbeger-menu">
+      <div class="humberger-icon" onclick="toogleMenu()">
+      <span></span>  
+      <span></span>  
+      <span></span>  
       </div>
-    </nav>
-  
+      <div class="menu-links">
+        <li><a href="#about"  onclick="toogleMenu()">about</a></li>
+        <li><a href="#experience" onclick="toogleMenu()">experience</a></li>
+        <li><a href="#projects" onclick="toogleMenu()">projects</a></li>
+        <li><a href="#contact" onclick="toogleMenu()">contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic_cont">
+      <img class="profilePic" src="./pictures/IMG_20240924_193427_300.jpg" alt="">
+    </div>
+    <div class="section__text">
+      <p class="section__p1">Hello Iam <h1 class="title">Noble Paul</h1></p>
+      <p class="section__p2">full stack developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="
+         window.open('./assets/logic')
+        ">download cv
+        </button>
+        <button class="btn btn-color-1" onclick="
+          window.location.href='./#contact'
+        ">Contact info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
   <script src="main.js"></script>
 </body>
 </html>
